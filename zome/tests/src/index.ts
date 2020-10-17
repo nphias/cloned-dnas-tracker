@@ -9,9 +9,9 @@ export const simpleConfig = {
   bob: Config.dna("../cloned_dna_tracker.dna.gz", null),
 };
 
-const _template_dna_hash = "ewdf"
+const _template_dna_hash = "QmUStWnxNcsuUgPrs7ASVWsFhAXhZufNnKBibRG2XSsVuo"
 const _properties = {key1:"keyvalue1",key2:"keyvalue2"}
-const _cloned_dna_hash = "dde"
+const _cloned_dna_hash = "QmUStWnxNcsuUgPrs7ASVWsFhAXhZufNnKBibRG2XSsVua"
 
 orchestrator.registerScenario(
   "create and a cloned dna",

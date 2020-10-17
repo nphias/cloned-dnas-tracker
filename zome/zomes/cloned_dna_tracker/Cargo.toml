@@ -12,4 +12,4 @@ name = "cloned_dna_tracker"
 derive_more = "0"
 serde = "1"
 
-hdk3 = {git = "https://github.com/holochain/holochain", rev = "4714fbd", package = "hdk3"}
+hdk3 = {git = "https://github.com/holochain/holochain", rev = "c09e5a8", package = "hdk3"}
