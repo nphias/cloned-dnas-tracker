@@ -1,4 +1,4 @@
-# CLONED_TRACKER_DNA_MODULE
+# CLONED_TRACKER_DNA MODULE
 
 Small zome to create and retrieve dna clones, in holochain RSM.
 
