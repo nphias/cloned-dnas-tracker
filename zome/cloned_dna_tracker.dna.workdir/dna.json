@@ -1,0 +1,10 @@
+{
+  "name": "cloned_dna_tracker",
+  "uuid": "",
+  "properties": null,
+  "zomes": {
+    "cloned_dna_tracker": {
+      "wasm_path": "../target/wasm32-unknown-unknown/release/cloned_dna_tracker.wasm"
+    }
+  }
+}

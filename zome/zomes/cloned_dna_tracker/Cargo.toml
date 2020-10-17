@@ -1,0 +1,15 @@
+[package]
+authors = ["guillem.cordoba@gmail.com","nphias@gmail.com"]
+edition = "2018"
+name = "cloned_dna_tracker"
+version = "0.0.1"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+name = "cloned_dna_tracker"
+
+[dependencies]
+derive_more = "0"
+serde = "1"
+
+hdk3 = {git = "https://github.com/holochain/holochain", rev = "4714fbd", package = "hdk3"}
