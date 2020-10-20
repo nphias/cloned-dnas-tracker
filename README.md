@@ -25,7 +25,7 @@ cloned_dna_tracker = {git = "https://github.com/holochain-open-dev/cloned-dnas-t
 extern crate cloned_dna_tracker;
 ```
 6. Add the zome into your `*.dna.workdir/dna.json` file.
-7. Compile the DNA with the usual `CARGO_TARGET=target cargo build --release --target wasm32-unknown-unknown`.
+7. Compile the DNA with the usual `CARGO_TARGET_DIR=target cargo build --release --target wasm32-unknown-unknown`.
 
 ## Developer setup
 
