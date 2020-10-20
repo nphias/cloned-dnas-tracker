@@ -14,7 +14,7 @@ const _properties = {key1:"keyvalue1",key2:"keyvalue2"}
 const _cloned_dna_hash = "QmUStWnxNcsuUgPrs7ASVWsFhAXhZufNnKBibRG2XSsVua"
 
 orchestrator.registerScenario(
-  "create and a cloned dna",
+  "create and find a cloned dna",
   async (s, t) => {
     const { conductor } = await s.players({
       conductor: Config.gen(simpleConfig),
@@ -33,14 +33,17 @@ orchestrator.registerScenario(
     );
     t.ok(clonedDNATrackerHash);
 
-    await sleep(10);
+    await sleep(20);
 
     let cloned_dnas = await conductor.call(
       "bob",
       "cloned_dna_tracker",
       "get_cloned_dnas_for_template",
-      null
+      {
+        hashstring: _template_dna_hash
+      }
     );
+    console.log("clone data:",cloned_dnas)
     t.equal(cloned_dnas.length, 1);
   }
 );
